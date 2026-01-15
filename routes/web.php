@@ -18,6 +18,17 @@ Route::get('/muro', [MensajeController::class, 'index'])
     ->middleware('auth')    // Protege la ruta para usuarios autenticados
     ->name('mensaje.index');
 
+//Ruta a la tabla de datos
+Route::get('/data', [AlumnoController::class, 'mostrarDatos'])->name('data');
+
+//Ruta al formulario
+Route::get('/admin/user/create', [AlumnoController::class, 'mostrarFormulario'])
+    ->name('alumno');
+
+//Ruta para procesar los datos del formulario enviado
+Route::post('/admin/user/alumno', [AlumnoController::class, 'procesarFormulario'])
+    ->name('guardar.form');
+
 // Ruta de administración protegida con middleware 'auth'
 Route::middleware(['auth'
 ])->group(function () {

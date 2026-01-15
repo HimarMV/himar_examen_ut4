@@ -63,8 +63,8 @@ return [
     |
     */
 
-    'logo' => '<b>Sergio</b>Admin',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Himar</b>Admin',
+    'logo_img' => 'vendor/adminlte/dist/img/a.jpg',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -314,6 +314,11 @@ return [
         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
+        ],
+        [
+           'text' => 'Alumnos',
+           'url' => 'admin/users/alumno',
+           'icon' => 'fas fa-fw fa-user',
         ],
         [
            'text' => 'Dashboard',

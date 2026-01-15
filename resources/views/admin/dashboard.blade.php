@@ -5,7 +5,9 @@
 @endsection
 @section('content')
   <p>Bienvenido al panel de administración.</p>
+  <p>SixSeven</p>
 @endsection
+
 
 <!--
 Primero, se utiliza la directiva `extends` para indicar que esta plantilla hereda de otra plantilla llamada `adminlte::page`. Esto significa que la plantilla base `adminlte::page` proporciona una estructura general y estilos que esta plantilla específica reutiliza.
